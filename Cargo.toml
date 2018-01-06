@@ -10,6 +10,6 @@ readme = "README.md"
 
 [dependencies]
 dbus = "0.6"
-gtk = { version = "0.1", features = ["v3_16"] }
-gdk = { version = "0.5" }
+gtk = { version = "0.3", features = ["v3_16"] }
+gdk = { version = "0.7" }
 quickersort = "3"
