@@ -1,13 +1,3 @@
-[root]
-name = "systemd-manager"
-version = "1.0.2"
-dependencies = [
- "dbus 0.5.2 (registry+https://github.com/rust-lang/crates.io-index)",
- "gdk 0.5.2 (registry+https://github.com/rust-lang/crates.io-index)",
- "gtk 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)",
- "quickersort 2.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
-]
-
 [[package]]
 name = "atk-sys"
 version = "0.3.3"
@@ -59,11 +49,11 @@ dependencies = [
 
 [[package]]
 name = "dbus"
-version = "0.5.2"
+version = "0.6.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "libc 0.2.21 (registry+https://github.com/rust-lang/crates.io-index)",
- "metadeps 1.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "libdbus-sys 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -229,6 +219,14 @@ version = "0.2.21"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
+name = "libdbus-sys"
+version = "0.1.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "metadeps 1.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
 name = "metadeps"
 version = "1.1.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -295,6 +293,16 @@ dependencies = [
 ]
 
 [[package]]
+name = "systemd-manager"
+version = "1.0.2"
+dependencies = [
+ "dbus 0.6.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "gdk 0.5.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "gtk 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "quickersort 2.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
 name = "toml"
 version = "0.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -324,7 +332,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 "checksum c_vec 1.2.0 (registry+https://github.com/rust-lang/crates.io-index)" = "0059f5a658f62a4bd3937a7addc52ccfda144b75cce7a92b187e528629cdc507"
 "checksum cairo-rs 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)" = "efce5d4fc3d3369f0b6d249ece7807b8f05c3e08a149bdfe85f99ad5740b7919"
 "checksum cairo-sys-rs 0.3.3 (registry+https://github.com/rust-lang/crates.io-index)" = "ee7f9df649493d57a37ae84f57e0d5848714802276151ad742c4ff75ef8e8cd8"
-"checksum dbus 0.5.2 (registry+https://github.com/rust-lang/crates.io-index)" = "47f881971824401c27bc1ff9f641d54ac66e0f409631806fa7be8cad8e6be450"
+"checksum dbus 0.6.1 (registry+https://github.com/rust-lang/crates.io-index)" = "5b2c58aab20dd6637871e6e03cb6122f00b496a91eb65b688639c940012d8710"
 "checksum error-chain 0.7.2 (registry+https://github.com/rust-lang/crates.io-index)" = "318cb3c71ee4cdea69fdc9e15c173b245ed6063e1709029e8fd32525a881120f"
 "checksum gdk 0.5.2 (registry+https://github.com/rust-lang/crates.io-index)" = "763c9a7cc10e18660c80f04d49a12da55743ef3363af4718320b119b60aaa49e"
 "checksum gdk-pixbuf 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)" = "792bacc7473ab6da4aaaba55f0b8b359f70ed1dee297af3decfb44c44f6e1fb8"
@@ -338,6 +346,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 "checksum gtk 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)" = "7fee2932d0c1d91dd2744a06e242df3d28c5f838aa65cb327a5db71eeb36481c"
 "checksum gtk-sys 0.3.3 (registry+https://github.com/rust-lang/crates.io-index)" = "7445eb281879ac472e5f5816058d53eaceff2bab7b78a095a4044f4c0cccc754"
 "checksum libc 0.2.21 (registry+https://github.com/rust-lang/crates.io-index)" = "88ee81885f9f04bff991e306fea7c1c60a5f0f9e409e99f6b40e3311a3363135"
+"checksum libdbus-sys 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)" = "e98e3259797bbd8ad6db7f0bd3b0f223a4e5f3bd0b4059c1b60e68f4fc1925f9"
 "checksum metadeps 1.1.1 (registry+https://github.com/rust-lang/crates.io-index)" = "829fffe7ea1d747e23f64be972991bc516b2f1ac2ae4a3b33d8bea150c410151"
 "checksum nodrop 0.1.9 (registry+https://github.com/rust-lang/crates.io-index)" = "52cd74cd09beba596430cc6e3091b74007169a56246e1262f0ba451ea95117b2"
 "checksum num-traits 0.1.37 (registry+https://github.com/rust-lang/crates.io-index)" = "e1cbfa3781f3fe73dc05321bed52a06d2d491eaa764c52335cf4399f046ece99"
