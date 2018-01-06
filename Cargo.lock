@@ -245,11 +245,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "num-traits"
-version = "0.1.37"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-
-[[package]]
 name = "odds"
 version = "0.2.25"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -284,11 +279,10 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
 name = "quickersort"
-version = "2.2.0"
+version = "3.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "nodrop 0.1.9 (registry+https://github.com/rust-lang/crates.io-index)",
- "num-traits 0.1.37 (registry+https://github.com/rust-lang/crates.io-index)",
  "unreachable 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
@@ -299,7 +293,7 @@ dependencies = [
  "dbus 0.6.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "gdk 0.5.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "gtk 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)",
- "quickersort 2.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "quickersort 3.0.0 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -349,12 +343,11 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 "checksum libdbus-sys 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)" = "e98e3259797bbd8ad6db7f0bd3b0f223a4e5f3bd0b4059c1b60e68f4fc1925f9"
 "checksum metadeps 1.1.1 (registry+https://github.com/rust-lang/crates.io-index)" = "829fffe7ea1d747e23f64be972991bc516b2f1ac2ae4a3b33d8bea150c410151"
 "checksum nodrop 0.1.9 (registry+https://github.com/rust-lang/crates.io-index)" = "52cd74cd09beba596430cc6e3091b74007169a56246e1262f0ba451ea95117b2"
-"checksum num-traits 0.1.37 (registry+https://github.com/rust-lang/crates.io-index)" = "e1cbfa3781f3fe73dc05321bed52a06d2d491eaa764c52335cf4399f046ece99"
 "checksum odds 0.2.25 (registry+https://github.com/rust-lang/crates.io-index)" = "c3df9b730298cea3a1c3faa90b7e2f9df3a9c400d0936d6015e6165734eefcba"
 "checksum pango 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)" = "21d777a87f13107b96be840dec1c34e0fe1a7b5630dd90c74b4eec923c439187"
 "checksum pango-sys 0.3.3 (registry+https://github.com/rust-lang/crates.io-index)" = "f29f64bc081e778cb897e3ef20aae178150d165d0eb77065b9e20437407c5546"
 "checksum pkg-config 0.3.9 (registry+https://github.com/rust-lang/crates.io-index)" = "3a8b4c6b8165cd1a1cd4b9b120978131389f64bdaf456435caa41e630edba903"
-"checksum quickersort 2.2.0 (registry+https://github.com/rust-lang/crates.io-index)" = "14ae8f367c38c78abd03114e524b55a817885446662413fbca951f42848450c5"
+"checksum quickersort 3.0.0 (registry+https://github.com/rust-lang/crates.io-index)" = "1739799b005663fb1c902601f8c9d331ec9e778b115f3fb155034d5624243f94"
 "checksum toml 0.2.1 (registry+https://github.com/rust-lang/crates.io-index)" = "736b60249cb25337bc196faa43ee12c705e426f3d55c214d73a4e7be06f92cb4"
 "checksum unreachable 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)" = "1f2ae5ddb18e1c92664717616dd9549dde73f539f01bd7b77c2edb2446bdff91"
 "checksum void 1.0.2 (registry+https://github.com/rust-lang/crates.io-index)" = "6a02e4885ed3bc0f2de90ea6dd45ebcbb66dacffe03547fadbb0eeae2770887d"
