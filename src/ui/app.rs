@@ -1,6 +1,6 @@
 use super::{Content, Header};
 use super::dialogs::Dialogs;
-use gdk::CONTROL_MASK;
+use gdk::ModifierType;
 use gtk;
 use gtk::*;
 use std::io::Write;
@@ -196,10 +196,10 @@ impl App {
         let selection_pane = self.content.units.selection.container.clone();
         self.window.connect_key_press_event(move |_window, event| {
             match event.get_keyval() {
-                key if key == '\\' as u32 && event.get_state().contains(CONTROL_MASK) => {
+                key if key == '\\' as u32 && event.get_state().contains(ModifierType::CONTROL_MASK) => {
                     selection_pane.set_visible(!selection_pane.get_visible())
                 }
-                key if key == 'q' as u32 && event.get_state().contains(CONTROL_MASK) => {
+                key if key == 'q' as u32 && event.get_state().contains(ModifierType::CONTROL_MASK) => {
                     gtk::main_quit();
                 }
                 _ => ()

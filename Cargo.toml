@@ -20,16 +20,16 @@ dbus = "0.6.0"
 failure = "0.1.1"
 failure_derive = "0.1.1"
 horrorshow = "0.6.2"
-pango = "0.2.0"
+pango = "0.3"
 quickersort = "3.0.0"
 
 [dependencies.gdk]
-version = "0.6"
+version = "0.7"
 
 [dependencies.gtk]
 features = ["v3_18"]
-version = "0.2"
+version = "0.3"
 
 [dependencies.sourceview]
 features = ["v3_18"]
-version = "0.2"
+version = "0.3"
